@@ -26,7 +26,7 @@ const students = [{
 const DataTable = () => {
 const TableHeader = () => {
     return(
-            <thead>
+            <thead >
                 <tr>
                 <th>Id</th>
                 <th>Name</th>
@@ -42,7 +42,7 @@ const TableAction = (key) => {
 }
 
 const TableRow = () => {
-    let [studentList, setStudents] = useState([])
+    let [studentList] = useState([])
     studentList = students
     const listItems = studentList.map((student) =>
 <tr>
@@ -60,7 +60,7 @@ return(
 }
 return(
     <div>
-        <table border="10">
+        <table border="10" className="table">
         <TableHeader />
         <TableRow />
         </table>
