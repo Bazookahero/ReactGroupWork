@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 // import {StudentList} from './StudentList';
-let random = Math.random(Math.floor)*100;
+let random = Math.floor(Math.random()*50);
 
 const students = [{
     studentId: 1,
